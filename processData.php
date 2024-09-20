@@ -14,8 +14,22 @@
     <p>Nombre:
         <?php echo $_POST['name'];?>
     </p>
-    <p>
+    <p>Edad:
         <?php echo $_POST['age'];?>
+    </p>
+    <p>
+        Aficion:
+        <?php echo $_POST['hobby'];?>
+    </p>
+    <?php if (isset( $_POST['course'])) { ?>
+        <p>
+            Matriculado en el ciclo: 
+            <?php echo $_POST['course'];?>
+        </p>
+    <?php } ?>
+    <p>
+        Lado preferido:
+        <?php echo  $_POST['side'];?>
     </p>
 </body>
 </html>
